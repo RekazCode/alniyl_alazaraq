@@ -145,7 +145,7 @@
         /* القسم الرئيسي (Hero) */
         .hero {
             height: 100vh;
-            background: linear-gradient(to left, rgba(0, 80, 158, 0.85), rgba(0, 168, 232, 0.7)), url('https://images.unsplash.com/photo-1544984535-90d644837fc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            background: linear-gradient(to left, rgba(0, 80, 158, 0.85), rgba(0, 168, 232, 0.7)), url('1.jpg') center/cover;
             display: flex;
             align-items: center;
             text-align: center;
@@ -495,17 +495,7 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <!-- استخدام عنصر جمالي بالـ CSS كبديل للصور الخارجية لضمان السرعة والتصميم النظيف -->
-                    <div style="background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); height: 400px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); position: relative; overflow: hidden;">
-                        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.2; background-image: radial-gradient(#fff 2px, transparent 2px); background-size: 30px 30px;"></div>
-                        <div style="position: absolute; bottom: -50px; right: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
-                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
-                            <img src="logo.png" alt="شعار النيل الأزرق" style="height: 300px; width: auto;">
-                                <path d="M12 2.16394C12 2.16394 4 9.14164 4 14C4 18.4183 7.58172 22 12 22C16.4183 22 20 18.4183 20 14C20 9.14164 12 2.16394 12 2.16394Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
-                            </svg>
-                            
-                        </div>
-                    </div>
+                    <img src="2.jpg" alt="عن النيل الأزرق" style="width: 100%; height: auto; max-height: 400px; object-fit: contain; border-radius: 20px; display: block; margin: 0 auto;">
                 </div>
             </div>
         </div>
@@ -555,6 +545,11 @@
                 </div>
 
             </div>
+            
+            <div style="margin-top: 50px; text-align: center;">
+                <img src="4.jpg" alt="خدمات النيل الأزرق" style="max-width: 100%; height: auto; max-height: 400px; object-fit: contain; border-radius: 20px;">
+            </div>
+            
         </div>
     </section>
 
@@ -566,40 +561,45 @@
                 اختياركم لشركة النيل الأزرق يعني الاستثمار الآمن والمستدام في مواردكم المائية. نحن نقدم حلولاً فنية مبنية على أسس هندسية واضحة.
             </p>
             
-            <div class="features-grid">
-                
-                <div class="feature-item">
-                    <h4>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        دقة تقنية متناهية
-                    </h4>
-                    <p>نعتمد على أحدث أجهزة الكشف الجيوفيزيائي وتكنولوجيا التصوير بالأعماق، لنقطع الشك باليقين ونحميكم من تكاليف الحفر العشوائي أو التشخيص الخاطئ للأعطال.</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 50px; align-items: center;">
+                <div class="features-grid" style="margin-top: 0;">
+                    
+                    <div class="feature-item">
+                        <h4>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            دقة تقنية متناهية
+                        </h4>
+                        <p>نعتمد على أحدث أجهزة الكشف الجيوفيزيائي وتكنولوجيا التصوير بالأعماق، لنقطع الشك باليقين ونحميكم من تكاليف الحفر العشوائي أو التشخيص الخاطئ للأعطال.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <h4>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            خبرة في الطبيعة الليبية
+                        </h4>
+                        <p>نمتلك فهماً عميقاً لطبقات الأرض وخصائص المياه الجوفية في منطقة جنزور وكافة ربوع ليبيا، مما يجعل قراراتنا مبنية على واقع الأرض لا التوقعات.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <h4>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            التزام بالشفافية والسرعة
+                        </h4>
+                        <p>نؤمن بأن وقت العميل ثمين؛ نلتزم بتقديم تقارير دقيقة ومباشرة، مع استجابة سريعة لعمليات الصيانة الطارئة لضمان عدم توقف إمداداتكم المائية.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <h4>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            توفير التكاليف 
+                        </h4>
+                        <p>من خلال الصيانة الدورية والتصوير الاستباقي، نساعدكم في اكتشاف المشاكل قبل تفاقمها، مما يطيل العمر الافتراضي للبئر ويقلل مصاريف الإصلاحات الكبرى.</p>
+                    </div>
                 </div>
 
-                <div class="feature-item">
-                    <h4>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        خبرة في الطبيعة الليبية
-                    </h4>
-                    <p>نمتلك فهماً عميقاً لطبقات الأرض وخصائص المياه الجوفية في منطقة جنزور وكافة ربوع ليبيا، مما يجعل قراراتنا مبنية على واقع الأرض لا التوقعات.</p>
+                <div class="why-us-image" style="display: flex; align-items: center; justify-content: center; height: 100%;">
+                    <img src="3.jpg" alt="لماذا نحن" style="width: 100%; height: auto; max-height: 500px; object-fit: contain; border-radius: 20px;">
                 </div>
-
-                <div class="feature-item">
-                    <h4>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        التزام بالشفافية والسرعة
-                    </h4>
-                    <p>نؤمن بأن وقت العميل ثمين؛ نلتزم بتقديم تقارير دقيقة ومباشرة، مع استجابة سريعة لعمليات الصيانة الطارئة لضمان عدم توقف إمداداتكم المائية.</p>
-                </div>
-
-                <div class="feature-item">
-                    <h4>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        توفير التكاليف 
-                    </h4>
-                    <p>من خلال الصيانة الدورية والتصوير الاستباقي، نساعدكم في اكتشاف المشاكل قبل تفاقمها، مما يطيل العمر الافتراضي للبئر ويقلل مصاريف الإصلاحات الكبرى.</p>
-                </div>
-
             </div>
         </div>
     </section>
